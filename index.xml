@@ -23,6 +23,15 @@ draft: true auf false umstellen Aus Ordner Public wird gearbeitet: .</descriptio
     </item>
     
     <item>
+      <title>Fortsetzung mit Syntax</title>
+      <link>/posts/2_fortsetzungmitsyntax/</link>
+      <pubDate>Thu, 14 May 2020 10:02:53 +0200</pubDate>
+      
+      <guid>/posts/2_fortsetzungmitsyntax/</guid>
+      <description>Heute geht es weiter. Der Blog wird in Internet veröffentlicht. Aber zuerst über Syntax:</description>
+    </item>
+    
+    <item>
       <title>Erste Schritte mit Hugo</title>
       <link>/posts/ersterartikel/</link>
       <pubDate>Tue, 12 May 2020 20:14:11 +0200</pubDate>
