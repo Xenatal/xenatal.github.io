@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Xenatals Abenteur in Code</title>
+    <title>Xenatals Abenteuer in Code</title>
     <link>http://example.org/</link>
-    <description>Recent content on Xenatals Abenteur in Code</description>
+    <description>Recent content on Xenatals Abenteuer in Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3_WirdBlogHochgeladen</title>
+      <link>http://example.org/posts/3_wirdbloghochgeladen/</link>
+      <pubDate>Thu, 14 May 2020 11:47:08 +0200</pubDate>
+      
+      <guid>http://example.org/posts/3_wirdbloghochgeladen/</guid>
+      <description>Anfang ist hier Link 7. draft: true auf false umstellen</description>
+    </item>
     
     <item>
       <title>Erste Schritte mit Hugo</title>
