@@ -2,8 +2,8 @@
 <html lang="de-de">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="/posts/hallowelt/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="/posts/4_flexbox/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Heute geht es um FlexBox" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
         <meta property="og:image:height" content="250" /><meta property="og:image" content="/images/default_summary_hu724cba798507f780d9a9e97904e5105b_90068_600x0_resize_q75_box.jpg" /><title>Personal website and blog</title>
     
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
@@ -121,12 +121,28 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title"></h1>
+        <h1 class="title is-2 section-title">Heute geht es um FlexBox</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
-          
+          <h1 id="die-wichstigse-momente-mit-flex">Die wichstigse Momente mit Flex:</h1>
+<p>Aktivierung: <code>display: flex</code>;</p>
+<p>Eigenschaften für <strong><em>Container</em></strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">  <span style="color:#f92672">flex-direction</span>:<span style="color:#a6e22e">row</span><span style="color:#f92672">(</span><span style="color:#f92672">-reverse</span><span style="color:#f92672">)/</span><span style="color:#f92672">column</span><span style="color:#f92672">(</span><span style="color:#f92672">-reverse</span><span style="color:#f92672">)</span> <span style="color:#75715e">/* Wie werden Elemente auf die Seite eingeordnet;*/</span>
+  <span style="color:#f92672">flex-wrap</span><span style="color:#f92672">:(</span><span style="color:#f92672">no</span><span style="color:#f92672">)</span><span style="color:#f92672">wrap</span><span style="color:#f92672">(</span><span style="color:#f92672">-reverse</span><span style="color:#f92672">)</span><span style="color:#75715e">/* Ob die Elemente auf eine Zeile stehen; */</span>
+  <span style="color:#f92672">flex-flow</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#75715e">/*Kürzung von `direction &amp; wrap`*/</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">justify-content</span>:<span style="color:#a6e22e">flex</span><span style="color:#f92672">(</span><span style="color:#f92672">-start</span><span style="color:#f92672">,</span><span style="color:#f92672">-end</span><span style="color:#f92672">,</span><span style="color:#f92672">center</span><span style="color:#f92672">,</span> <span style="color:#f92672">space-between</span><span style="color:#f92672">,</span> <span style="color:#f92672">space-around</span><span style="color:#f92672">)</span> <span style="color:#75715e">/*Ausrichtung **der Elemente** entlang `X-Dimension`*/</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">align-items</span>:<span style="color:#a6e22e">stretch</span><span style="color:#f92672">,</span> <span style="color:#f92672">flex</span><span style="color:#f92672">(</span><span style="color:#f92672">-start</span><span style="color:#f92672">,</span><span style="color:#f92672">-end</span><span style="color:#f92672">,</span> <span style="color:#f92672">center</span><span style="color:#f92672">,</span> <span style="color:#f92672">baseline</span><span style="color:#f92672">)</span> <span style="color:#75715e">/*Ausrichtung **der Elemente** entlang `Y-Dimension`*/</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">align-content</span>:<span style="color:#a6e22e">stretch</span><span style="color:#f92672">,</span><span style="color:#f92672">flex</span><span style="color:#f92672">(</span><span style="color:#f92672">-start</span><span style="color:#f92672">,</span><span style="color:#f92672">-end</span><span style="color:#f92672">,</span><span style="color:#f92672">center</span><span style="color:#f92672">,</span> <span style="color:#f92672">space-between</span><span style="color:#f92672">,</span> <span style="color:#f92672">space-around</span><span style="color:#f92672">)</span><span style="color:#75715e">/* Ausrichtung **der Zeilen im Element** entlang `Y-Dimension`*/</span><span style="color:#f92672">;</span>
+</code></pre></div><p>Eigenschaften für <strong><em>Element</em></strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">  <span style="color:#f92672">order</span>:<span style="color:#a6e22e">0</span>  <span style="color:#f92672">Reihenfolge</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">flex-grow</span>:<span style="color:#a6e22e">0</span> <span style="color:#f92672">Ausdehnung</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">flex-shrink</span>:<span style="color:#a6e22e">0</span> <span style="color:#f92672">Schrumpfung</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">flex-basis</span>:<span style="color:#a6e22e">0</span> <span style="color:#f92672">Standardgröße</span> <span style="color:#f92672">in</span> <span style="color:#f92672">px</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">flex</span><span style="color:#f92672">:</span> <span style="color:#f92672">Kürzung</span> <span style="color:#f92672">von</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">grow</span> <span style="color:#f92672">&amp;</span> <span style="color:#f92672">shrink</span> <span style="color:#f92672">&amp;</span> <span style="color:#f92672">basis</span><span style="color:#960050;background-color:#1e0010">`</span><span style="color:#f92672">;</span>
+  <span style="color:#f92672">align-self</span><span style="color:#f92672">:</span> <span style="color:#f92672">auto</span><span style="color:#f92672">,</span><span style="color:#f92672">flex</span><span style="color:#f92672">(</span><span style="color:#f92672">-start</span><span style="color:#f92672">,</span><span style="color:#f92672">-end</span><span style="color:#f92672">,</span><span style="color:#f92672">center</span><span style="color:#f92672">,</span><span style="color:#f92672">baseline</span><span style="color:#f92672">,</span> <span style="color:#f92672">stretch</span><span style="color:#f92672">)</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#f92672">Standardausrichtung</span><span style="color:#f92672">;</span>
+</code></pre></div>
         </section>
       </div>
     </div>
@@ -134,7 +150,7 @@
   <div class="container">
     <div class="columns">
       <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
-        :&nbsp;1 January 0001</div>
+        :&nbsp;26 May 2020</div>
     </div>
   </div></section>
 <footer class="footer footer-dark">
